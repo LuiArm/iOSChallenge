@@ -11,6 +11,9 @@
 		F6162FD72A049464003FC9A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6162FD62A049464003FC9A8 /* ContentView.swift */; };
 		F6162FD92A049465003FC9A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6162FD82A049465003FC9A8 /* Assets.xcassets */; };
 		F6162FDC2A049465003FC9A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6162FDB2A049465003FC9A8 /* Preview Assets.xcassets */; };
+		F6162FE62A0861C2003FC9A8 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6162FE52A0861C2003FC9A8 /* Meal.swift */; };
+		F6162FE82A086274003FC9A8 /* MealFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6162FE72A086274003FC9A8 /* MealFetcher.swift */; };
+		F6162FEA2A086587003FC9A8 /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6162FE92A086587003FC9A8 /* MealListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		F6162FD62A049464003FC9A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F6162FD82A049465003FC9A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6162FDB2A049465003FC9A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F6162FE52A0861C2003FC9A8 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		F6162FE72A086274003FC9A8 /* MealFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealFetcher.swift; sourceTree = "<group>"; };
+		F6162FE92A086587003FC9A8 /* MealListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,9 @@
 		F6162FD32A049464003FC9A8 /* iOSChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				F6162FE42A086179003FC9A8 /* viewmodel */,
+				F6162FE32A08616E003FC9A8 /* model */,
+				F6162FE22A08615F003FC9A8 /* view */,
 				F6162FD42A049464003FC9A8 /* iOSChallengeApp.swift */,
 				F6162FD62A049464003FC9A8 /* ContentView.swift */,
 				F6162FD82A049465003FC9A8 /* Assets.xcassets */,
@@ -65,6 +74,30 @@
 				F6162FDB2A049465003FC9A8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F6162FE22A08615F003FC9A8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F6162FE92A086587003FC9A8 /* MealListView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F6162FE32A08616E003FC9A8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F6162FE52A0861C2003FC9A8 /* Meal.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F6162FE42A086179003FC9A8 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				F6162FE72A086274003FC9A8 /* MealFetcher.swift */,
+			);
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6162FE82A086274003FC9A8 /* MealFetcher.swift in Sources */,
 				F6162FD72A049464003FC9A8 /* ContentView.swift in Sources */,
+				F6162FE62A0861C2003FC9A8 /* Meal.swift in Sources */,
 				F6162FD52A049464003FC9A8 /* iOSChallengeApp.swift in Sources */,
+				F6162FEA2A086587003FC9A8 /* MealListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,15 +7,13 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    @StateObject var viewModel = ViewModel()
+    
     var body: some View {
-        VStack {
-            List{
-                Text("Hello")
-            }
+            MealListView()
             
-        }
-        .padding()
     }
 }
 
