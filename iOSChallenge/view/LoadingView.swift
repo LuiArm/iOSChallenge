@@ -9,7 +9,11 @@ import SwiftUI
 
 struct LoadingView: View {
     var body: some View {
-        Text("loading")
+        VStack {
+            Text("🍩").font(.system(size: 40))
+            ProgressView()
+            Text("Getting desserts.....")
+        }
     }
 }
 

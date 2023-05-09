@@ -11,13 +11,21 @@ struct MealListView: View {
     let meals: [Meal]
     
     var body: some View {
-        List {
-            ForEach(meals, id: \.self) { meal in
-                Text(meal.strMeal)
+        NavigationView{
+            List {
+                ForEach(meals, id: \.idMeal) { meal in
+                    NavigationLink{
+                        MealDetailView()
+                    } label: {
+                        MealRow(meal: meal)
+                    }
+                }
             }
-            }
+            .listStyle(PlainListStyle())
+            .navigationTitle("What is cooking?")
         }
     }
+}
 
 
 struct MealListView_Previews: PreviewProvider {
