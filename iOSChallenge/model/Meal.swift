@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct Meals: Codable{
+struct Meal: Codable, Hashable {
     let strMeal: String
     let strMealThumb: String
     let idMeal: String
 }
 
-struct Response: Codable {
-    let meals: [Meals]
+struct MealList: Codable {
+    let meals: [Meal]
 }

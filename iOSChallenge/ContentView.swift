@@ -9,11 +9,16 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @StateObject var viewModel = ViewModel()
+    @StateObject var mealFetcher = MealFetcher()
     
     var body: some View {
-            MealListView()
-            
+        if mealFetcher.isLoading{
+            LoadingView()
+        }else if mealFetcher.errorMessage != nil{
+            ErrorView(mealFetcher: mealFetcher)
+        }else {
+            MealListView(meals: mealFetcher.meals)
+        }
     }
 }
 

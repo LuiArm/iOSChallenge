@@ -8,29 +8,42 @@
 import Foundation
 
 
-class ViewModel: ObservableObject {
-    @Published var response: [Meals] = []
+class MealFetcher: ObservableObject {
+    @Published var meals =  [Meal]()
+    @Published var errorMessage: String? = nil
+    @Published var isLoading: Bool = false
     
+
+    init() {
+        fetchAllMeals()
+    }
     
-    func fetch() {
-        guard let url = URL(string: "https://themealdb.com/api/json/v1/1/filter.php?c=Dessert") else {
-            return
-        }
+    func fetchAllMeals() {
+        // TODO show error if cannot create url
+        isLoading = true
         
-        let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
-            guard let data = data, error == nil else {
-                return
+        let url = URL(string: "https://themealdb.com/api/json/v1/1/filter.php?c=Dessert")!
+         
+        let task = URLSession.shared.dataTask(with: url) { [unowned self] data, response, error in
+      
+            DispatchQueue.main.async {
+                self.isLoading = false
             }
+            let decoder = JSONDecoder()
+            if let data = data {
             
-            /// convert to json
-            do {
-                let meals = try JSONDecoder().decode([Meals].self,
-                from: data)
-                DispatchQueue.main.async {
-                    self?.response = meals
+                
+                do {
+                    let meal = try decoder.decode(MealList.self,
+                    from: data)
+                    DispatchQueue.main.async {
+                        self.meals = meal.meals
+                    }
+                    print(meal)
+                }catch{
+                    //TODO show error
+                    print(error)
                 }
-            }catch{
-                print(error)
             }
         }
         task.resume()

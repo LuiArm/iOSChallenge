@@ -8,19 +8,20 @@
 import SwiftUI
 
 struct MealListView: View {
-    let meals = [Meals]()
+    let meals: [Meal]
     
     var body: some View {
         List {
-            ForEach(meals, id: \.idMeal) { meal in 
+            ForEach(meals, id: \.self) { meal in
                 Text(meal.strMeal)
+            }
             }
         }
     }
-}
+
 
 struct MealListView_Previews: PreviewProvider {
     static var previews: some View {
-        MealListView()
+        MealListView(meals: [Meal]())
     }
 }
