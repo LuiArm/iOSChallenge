@@ -11,7 +11,6 @@ struct MealRow: View {
     let meal: Meal
     var body: some View {
         HStack{
-            
             if meal.strMealThumb != nil {
                 AsyncImage(url: URL(string: meal.strMealThumb) ){ phase in
                     if let image = phase.image {

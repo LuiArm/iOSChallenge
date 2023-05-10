@@ -22,7 +22,7 @@ struct MealListView: View {
                 }
             }
             .listStyle(PlainListStyle())
-            .navigationTitle("What is cooking?")
+            .navigationTitle("What's Bakin?")
         }
     }
 }
