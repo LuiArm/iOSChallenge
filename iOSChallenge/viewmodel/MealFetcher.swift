@@ -12,7 +12,7 @@ class MealFetcher: ObservableObject {
     @Published var meals =  [Meal]()
     @Published var errorMessage: String? = nil
     @Published var isLoading: Bool = false
-    
+    @Published var selectedId: String = ""
 
     init() {
         fetchAllMeals()
