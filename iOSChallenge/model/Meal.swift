@@ -7,16 +7,17 @@
 
 import Foundation
 
-struct Meal: Codable, Hashable {
+struct Meal: Codable, Hashable, Identifiable {
+    var id: String
+    
+    let idMeal: String
     let strMeal: String
     let strMealThumb: String
-    let idMeal: String
-    
+
     
     static func example1() -> Meal {
-        return Meal(strMeal: "Apam balik",
-                    strMealThumb: "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg",
-                    idMeal: "53049")
+        return Meal(id: "1", idMeal: "53049", strMeal: "Apam balik", strMealThumb: "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg")
+                    
     }
 }
 

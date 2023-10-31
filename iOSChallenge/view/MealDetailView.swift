@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct MealDetailView: View {
+    var detail: Detail
+    
     let image = "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg"
+    
     var body: some View {
         ScrollView{
             VStack{
@@ -46,7 +49,7 @@ struct MealDetailView: View {
                         """)
                     Text("Instructions:")
                         .font(.headline)
-                    Text("Mix milk, oil and egg together. Sift flour, baking powder and salt into the mixture. Stir well until all ingredients are combined evenly.\r\n\r\nSpread some batter onto the pan. Spread a thin layer of batter to the side of the pan. Cover the pan for 30-60 seconds until small air bubbles appear.\r\n\r\nAdd butter, cream corn, crushed peanuts and sugar onto the pancake. Fold the pancake into half once the bottom surface is browned.\r\n\r\nCut into wedges and best eaten when it is warm.")
+                    Text(detail.strInstructions)
                 }.padding()
                     .navigationBarTitleDisplayMode(.inline)
             }
@@ -61,6 +64,6 @@ struct MealDetailView: View {
 
 struct MealDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MealDetailView()
+        MealDetailView(detail: Detail.example())
     }
 }

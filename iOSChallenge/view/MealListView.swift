@@ -9,18 +9,21 @@ import SwiftUI
 
 struct MealListView: View {
     let meals: [Meal]
+    let details: [Detail]
     
     var body: some View {
-        NavigationView{
-            List {
-                ForEach(meals, id: \.idMeal) { meal in
+        NavigationStack{
+            ScrollView{
+                ForEach(details) { detail in
                     NavigationLink{
-                        MealDetailView()
+                        MealDetailView(detail: detail)
                     } label: {
-                        MealRow(meal: meal)
+                        MealRow(detail: detail)
                     }
-                }
+                
             }
+                }
+              
             .listStyle(PlainListStyle())
             .navigationTitle("What's Bakin?")
         }
@@ -30,6 +33,6 @@ struct MealListView: View {
 
 struct MealListView_Previews: PreviewProvider {
     static var previews: some View {
-        MealListView(meals: [Meal]())
+        MealListView(meals: [Meal](), details: [Detail]())
     }
 }

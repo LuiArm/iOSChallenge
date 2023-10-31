@@ -17,7 +17,6 @@
 		F6D061F22A0A9D49001DDFE6 /* MealRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D061F12A0A9D49001DDFE6 /* MealRow.swift */; };
 		F6D061F42A0A9D72001DDFE6 /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D061F32A0A9D72001DDFE6 /* MealDetailView.swift */; };
 		F6D061F62A0B27BD001DDFE6 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D061F52A0B27BD001DDFE6 /* Detail.swift */; };
-		F6D061F82A0B28F0001DDFE6 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D061F72A0B28F0001DDFE6 /* APIService.swift */; };
 		F6EEEFF42A09D35B00507281 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EEEFF32A09D35B00507281 /* ErrorView.swift */; };
 		F6EEEFF62A09D36700507281 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EEEFF52A09D36700507281 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
@@ -34,7 +33,6 @@
 		F6D061F12A0A9D49001DDFE6 /* MealRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRow.swift; sourceTree = "<group>"; };
 		F6D061F32A0A9D72001DDFE6 /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
 		F6D061F52A0B27BD001DDFE6 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
-		F6D061F72A0B28F0001DDFE6 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		F6EEEFF32A09D35B00507281 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		F6EEEFF52A09D36700507281 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				F6162FE72A086274003FC9A8 /* MealFetcher.swift */,
-				F6D061F72A0B28F0001DDFE6 /* APIService.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -191,7 +188,6 @@
 				F6D061F42A0A9D72001DDFE6 /* MealDetailView.swift in Sources */,
 				F6162FE82A086274003FC9A8 /* MealFetcher.swift in Sources */,
 				F6EEEFF42A09D35B00507281 /* ErrorView.swift in Sources */,
-				F6D061F82A0B28F0001DDFE6 /* APIService.swift in Sources */,
 				F6162FD72A049464003FC9A8 /* ContentView.swift in Sources */,
 				F6162FE62A0861C2003FC9A8 /* Meal.swift in Sources */,
 				F6162FD52A049464003FC9A8 /* iOSChallengeApp.swift in Sources */,

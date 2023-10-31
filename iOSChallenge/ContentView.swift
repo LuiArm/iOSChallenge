@@ -17,7 +17,7 @@ struct ContentView: View {
         }else if mealFetcher.errorMessage != nil{
             ErrorView(mealFetcher: mealFetcher)
         }else {
-            MealListView(meals: mealFetcher.meals)
+            MealListView(meals: mealFetcher.meals, details: mealFetcher.details)
         }
     }
 }

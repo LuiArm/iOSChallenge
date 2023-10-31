@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DEE0EE75-2442-4F11-A163-5ACF7710CBBD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "428D25FE-C332-425B-9C3B-C923DFF5660A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSChallenge/viewmodel/MealFetcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "fetchAllMeals()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9BFD3A50-1542-4935-9AAF-98E128CEC53C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSChallenge/viewmodel/MealFetcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "fetchDetails()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9BFD3A50-1542-4935-9AAF-98E128CEC53C - 2889afe5a2de00e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSChallenge.MealFetcher.fetchDetails() -&gt; ()"
+                  moduleName = "iOSChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luisarmendariz/Desktop/iOSChallenge/iOSChallenge/iOSChallenge/viewmodel/MealFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "9BFD3A50-1542-4935-9AAF-98E128CEC53C - 2889afe5a2de0327"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSChallenge.MealFetcher.fetchDetails() -&gt; ()"
+                  moduleName = "iOSChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luisarmendariz/Desktop/iOSChallenge/iOSChallenge/iOSChallenge/viewmodel/MealFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "260">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

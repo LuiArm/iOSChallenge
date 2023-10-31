@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct MealRow: View {
-    let meal: Meal
+    var detail: Detail
+    
     var body: some View {
         HStack{
-            if meal.strMealThumb != nil {
-                AsyncImage(url: URL(string: meal.strMealThumb) ){ phase in
+            if detail.strMealThumb != nil {
+                AsyncImage(url: URL(string: detail.strMealThumb) ){ phase in
                     if let image = phase.image {
                         image.resizable()
                             .scaledToFill()
@@ -31,7 +32,7 @@ struct MealRow: View {
             }
             
             VStack(alignment: .leading, spacing: 5){
-                Text(meal.strMeal)
+                Text(detail.strMeal)
                     .font(.headline)
             }
             
@@ -41,7 +42,7 @@ struct MealRow: View {
 
 struct MealRow_Previews: PreviewProvider {
     static var previews: some View {
-        MealRow(meal: Meal.example1())
+        MealRow(detail: Detail.example())
             .previewLayout(.fixed(width: 400, height: 200))
     }
 }
